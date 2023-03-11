@@ -11,9 +11,7 @@ import java.util.List;
 @Repository
 public class BookDao {
 
-    private final static String NAMESPACE = "com.library.dao.BookDao.";
-    @Resource
-    private SqlSessionTemplate sqlSessionTemplate;
+
 
     public int matchBook(final String searchWord) {
         String search = "%" + searchWord + "%";
